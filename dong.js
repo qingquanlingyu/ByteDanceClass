@@ -161,8 +161,8 @@ class Component {
     }
 
     setState(nextState) {
+        this.state = Object.assign(this.state, nextState);
         if (this.dom && this.shouldComponentUpdate(this.props, nextState)) {
-            this.state = Object.assign(this.state, nextState);
             patch(this.dom, this.render());
         }
     }

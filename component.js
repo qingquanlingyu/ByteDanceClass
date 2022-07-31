@@ -97,16 +97,21 @@ class List extends Component {
     }
 
     handleAdd(edata) {
-        console.log(edata);
+        //console.log(edata);
         if (typeof (this.props.id) == "undefined" || this.props.id == edata["listadd"]) {
-            this.setState({
-                list: [
-                    ...this.state.list,
-                    {
-                        text: edata["value"]
-                    }
-                ]
-            });
+            if (edata["value"] == "__fail__to__long__") {
+                window.alert("名字长度过长，不应超过16");
+            }
+            else {
+                this.setState({
+                    list: [
+                        ...this.state.list,
+                        {
+                            text: edata["value"]
+                        }
+                    ]
+                });
+            }
         }
     }
 
@@ -148,5 +153,5 @@ if (typeof Worker !== "undefined") {
         }
     };
 } else {
-    alert("错误：你的浏览器不支持WebWorker�?");
+    alert("错误：你的浏览器不支持WebWorker!");
 }
