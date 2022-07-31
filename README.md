@@ -1,2 +1,54 @@
 # ByteDanceClass
-å­—èŠ‚è·³åŠ¨æš‘æœŸç­é¡¹ç›®-å°ç¨‹åºè¿è¡Œæ—¶
+
+---
+
+×Ö½ÚÌø¶¯ÊîÆÚ°àÏîÄ¿-Ð¡³ÌÐòÔËÐÐÊ±
+
+## ÏîÄ¿Ô­Àí
+
+1. ÊÓÍ¼²ã
+   Ð¡³ÌÐòÊÓÍ¼Éè¼ÆÊ¹ÓÃ JSX£¬ÆäÔ­Àí»ù±¾²ÎÕÕÁËÉñ¹â´ó´óµÄ½Ì³Ì£º
+   https://github.com/QuarkGluonPlasma/frontend-framework-exercize/
+   Ö÷Òª²½ÖèÎª£º
+   - babel Ê¹ÓÃ react µÄ preset ·­ÒëÎª render function
+   - ¸ù¾Ý render function ·µ»ØµÄ vdom ½øÐÐäÖÈ¾£¨·½·¨»ù±¾²ÎÕÕÉñ¹â£©
+   - ÀûÓÃ render function Ìí¼Ó×Ô¶¨Òå×é¼þ£¨·½·¨»ù±¾²ÎÕÕÉñ¹â£©
+   - Ìí¼ÓÓÐ diff ¹¦ÄÜµÄ patch äÖÈ¾£¬²¢Í¨¹ý×Ô¶¨Òå×é¼þµÄ×´Ì¬À´¿ØÖÆ£¨·½·¨»ù±¾²ÎÕÕÉñ¹â£©
+2. ×Ô¶¨Òå×é¼þ
+   Í¨¹ý DSL Ìá¹©µÄ×é¼þ£¬¿ÉÒÔÀûÓÃ×é¼þµÄÔ¤ÉèÊÂ¼þºÍÉúÃüÖÜÆÚÀ´¿ØÖÆÂß¼­£¬²¢·ÀÖ¹Ô­Éú×é¼þÔì³ÉµÄ°²È«ÎÊÌâ
+   ÀûÓÃ render function£¬ÎÒÃÇ¿ÉÒÔ´´½¨×Ô¶¨Òå×é¼þÒÔ¹©Ê¹ÓÃ£¬×é¼þµÄÊµÏÖ»ù±¾²ÎÕÕÉñ¹â
+   µ±Ç°½öÊµÏÖÁËÁ½¸ö×é¼þ£º
+
+   - Éñ¹â½Ì³ÌÖÐµÄ List ×é¼þ£¬¶ÔÆä½øÐÐÁËÊÂ¼þ·â×°ºÍË«Ïß³Ì¸ÄÔì
+   - View ×é¼þ£¬´úÌæ div£¬²¢Ìí¼Ó show Ñ¡Ïî¿ØÖÆÊÇ·ñäÖÈ¾ÏÔÊ¾
+
+   Õë¶ÔÐ¡³ÌÐòµÄÐèÇó£¬ÐèÒª¶Ô×é¼þÉèÖÃ×Ô¶¨ÒåÊÂ¼þ
+   ÊÂ¼þÍ¨¹ý·¢²¼-¶©ÔÄÄ£Ê½´´½¨£¬Ã¿Ò»Àà×Ô¶¨ÒåÊÂ¼þ¾ù¶ÔÓ¦Ò»¸ö·¢²¼-¶©ÔÄÄ£Ê½Àà
+   ×Ô¶¨Òå×é¼þµÄ×´Ì¬¸Ä±äº¯Êý¶©ÔÄÊÂ¼þ£¬¶øÊÂ¼þµÄ·¢²¼Ôò¸ù¾ÝÊÇ·ñ»áÓÐ°²È«ÎÊÌâ£¬ÓÉÇ°¶Ë½»»¥Ö±½Ó·¢²¼£¬»òÓÉÇ°¶Ë½»»¥·¢ËÍµ½Âß¼­²ãºó£¬ÓÉÂß¼­²ã·µ»ØµÄÐÅÏ¢À´¿ØÖÆ·¢²¼¡£
+
+3. Âß¼­²ã
+   Ð¡³ÌÐòÂß¼­Éè¼ÆÔò²Î¿¼Ö÷Á÷µÄË«Ïß³Ì·½°¸£¬Ö±½ÓÍ¨¹ý Web Worker ´´½¨ logic.js µÄÂß¼­Ïß³Ì
+   ÊÓÍ¼²ãÓëÂß¼­²ãÍ¨¹ý JSON ¸ñÊ½´«µÝÐÅÏ¢
+   Ä¿Ç° JSON ¸ñÊ½ÉèÖÃµÄÐÅÏ¢Ö÷ÒªÎª£º×Ô¶¨ÒåÊÂ¼þÃû¡¢×é¼þ id¡¢×é¼þ×´Ì¬¸Ä±äÖµµÈ
+   Ô­ÔòÉÏ£¬ÎÒÃÇÆÚÍûÂß¼­²ã½ö´¦Àí×Ô¶¨Òå×é¼þ·¢ÉúµÄÊÂ¼þ
+
+4. »¹È±ÉÙÊ²Ã´
+   Ä¿Ç°¿ò¼Ü»ù±¾ÍêÉÆ£¬µ«¾àÀëÄÜ¹»Ê¹ÓÃµÄÐ¡³ÌÐò¿ò¼Ü»¹ÓÐºÜÔ¶µÄ¾àÀë
+   Ä¿Ç°Ö÷ÒªµÄÎÊÌâºÍÎ´À´¸Ä½øÖ÷ÒªÎª£º
+   - ×Ô¶¨Òå×é¼þ¼°Æä¹¦ÄÜ¹ýÉÙ
+     ¶ø²»Ê¹ÓÃ×Ô¶¨Òå×é¼þ£¬ËäÈ»Ô­ÔòÉÏÖ§³Ö JSX Óï·¨£¬µ«Õâ²»½öÎ¥±³Ð¡³ÌÐò°²È«Ô­Ôò£¬¶øÇÒ JSX Ð´³ÉµÄÊÓÍ¼²ãÖ»ÄÜÓÃÓÚµÚÒ»´ÎäÖÈ¾Ê±£¬Ö®ºóµÄÖØÐÂäÖÈ¾Êµ¼Ê¶¼ÊÇ×Ô¶¨Òå×é¼þ×´Ì¬¸Ä±ä½øÐÐµÄ patch£¬µ«ÊÇ×Ô¶¨Òå×é¼þÓÖ¹ýÉÙ...
+     Ö®Ç°ÎÒÊ¹ÓÃÁËÒ»ÖÖ¼¼Êõ·½°¸£¬½« JSX äÖÈ¾·ÅÈëÑ­»·ÖÐ£¬Ã¿´ÎäÖÈ¾¾ùÊÇÉ¾³ýËùÓÐ dom ÊýÖÐÔªËØÖØÐÂäÖÈ¾£¬µ«ÕâÑù²»½öÐ§ÂÊµÍ£¬¶øÇÒÎÞ·¨ÓÃÓÚ°²È«ÐèÇó¸ßµÄÐ¡³ÌÐò¡£¸Ã¿ò¼ÜÐèÒªµÄ»¹ÊÇ¸ü¶àµÄ×Ô¶¨Òå×é¼þ¡¢¸ü¶àµÄ×Ô¶¨ÒåÊÂ¼þ¡£ÀàËÆ wxml£¬Ìá¹©´ó²¿·Ö³£ÓÃ html ×é¼þµÄ·â×°Æ½Ìæ£¬²¢Ìá¹©ÊôÐÔ¿ØÖÆµÄÌõ¼þäÖÈ¾¡¢µã»÷ÊÂ¼þµÈ¹¦ÄÜ¡£²¢½øÒ»²½·â×°Ë«Ïß³ÌµÄ¹µÍ¨»úÖÆ¡£
+   - È±ÉÙÑùÊ½Ö§³Ö
+     ÓÉÓÚµ±Ç°ÈÔÎÞ·¨¿ØÖÆ×îÖÕäÖÈ¾µÄ html ×é¼þµÄ class¡¢id ÊôÐÔ£¬Ê¹ÓÃ css µÈ½øÐÐ¾«×¼µÄÑùÊ½¿ØÖÆÄÑÒÔÊµÏÖ¡£µ«ÔÊÐí¶Ô id¡¢class µÄ¿ØÖÆ¿ÖÅÂ»áÔì³É°²È«ÎÊÌâ¡£ÈÔÐèÒªÀàËÆ wxss µÄÓë DSL Í¬¼¶µÄÑùÊ½¿ØÖÆ¡£
+   - È±ÉÙÉúÃüÖÜÆÚµÈ¹¦ÄÜ
+     ÉúÃüÖÜÆÚµÈ¸´ÔÓ¹¦ÄÜÎ´ÊµÏÖ£¬ºÜ¶à¹¦ÄÜµÄÊµÏÖÄÑÒÔºÏÈËÒâ¡£
+
+## Ê¹ÓÃ·½·¨
+
+1. ½øÈëÄ¿Â¼£¬Ê¹ÓÃ npm install È·±£ÒÀÀµÒÑ°²×°
+2. ÔÚ index.js ÖÐ±à¼­Ð¡³ÌÐòÊÓÍ¼²ã£º
+   ÔÊÐíÍ¨¹ý JSX Óï·¨±à¼­Ð¡³ÌÐòµÄÊÓÍ¼½çÃæ
+   ÓÉÓÚ¿ò¼ÜÎªÆð²½½×¶Î£¬ÈÔÈ»ÔÊÐíÖ±½ÓÊ¹ÓÃÔÚ index.js ÖÐÊ¹ÓÃ js Óï·¨±à¼­±äÁ¿Óëº¯Êý£¬ÉõÖÁ¿ØÖÆäÖÈ¾Âß¼­
+3. ÔÚ logic.js ÖÐ¿ØÖÆÐ¡³ÌÐòÂß¼­²ã£º
+   Ô­ÔòÉÏÖ»ÔÊÐí¶Ô×Ô¶¨Òå×é¼þÓÐ¹ØÊÂ¼þ½øÐÐ´¦Àí£¬²¢°´ÌØ¶¨¸ñÊ½·´À¡
+4. Ê¹ÓÃ npm run serve ÔÊÐí·þÎñÆ÷
